@@ -1,1 +1,1 @@
-export * from './lib/connector';
+export { MagicConnector } from './lib/connector';
