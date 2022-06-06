@@ -144,7 +144,7 @@ export class MagicConnector extends Connector {
       }
       throw new UserRejectedRequestError('User rejected request');
     } catch (error) {
-      throw new UserRejectedRequestError();
+      // throw new UserRejectedRequestError();
     }
   }
 

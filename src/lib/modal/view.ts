@@ -85,10 +85,30 @@ export const createModal = async (props: {
   // FORM EMAIL INPUT
   const emailInput = document.createElement('input');
   emailInput.classList.add('Magic__emailInput');
-  emailInput.setAttribute('required', 'true');
+  // emailInput.setAttribute('required', 'false');
   emailInput.setAttribute('type', 'email');
   emailInput.setAttribute('placeholder', 'address@example.com');
   formBody.appendChild(emailInput);
+
+  // FORM OR LABEL
+  const orLabel = document.createElement('label');
+  orLabel.classList.add('Magic__orLabel');
+  orLabel.innerHTML = 'or';
+  formBody.appendChild(orLabel);
+
+  // FORM SMS LABEL
+  const smsLabel = document.createElement('label');
+  smsLabel.classList.add('Magic__smsLabel');
+  smsLabel.innerHTML = 'Sign-in with Phone no.';
+  formBody.appendChild(smsLabel);
+
+  // FORM SMS INPUT
+  const smsInput = document.createElement('input');
+  smsInput.classList.add('Magic__smsInput');
+  // smsInput.setAttribute('required', 'false');
+  smsInput.setAttribute('type', 'string');
+  smsInput.setAttribute('placeholder', '+1222111234');
+  formBody.appendChild(smsInput);
 
   // FORM SUBMIT BUTTON
   const submitButton = document.createElement('button');
